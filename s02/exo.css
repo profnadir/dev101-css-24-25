@@ -1,0 +1,22 @@
+#layout{
+    background-color: black;
+    width: 500px;
+    text-align: center;
+    padding: 5px;
+}
+
+.droite{
+    text-align: right;
+}
+
+.gauche{
+    text-align: left;
+}
+
+h2, p, button{
+    color: white;
+}
+
+#layout button{
+    background-color: blue;
+}

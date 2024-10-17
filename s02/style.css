@@ -1,0 +1,64 @@
+/* a[target=_blank] {
+    background-color: yellow;
+} */
+
+a[href^="https:"] {
+    background-color: yellow;
+}
+
+/* div ~ p {
+    background-color: yellow;
+}
+
+h2::before{
+    content: '**';
+}
+
+h2::after{
+    content: '**';
+}
+
+p::first-line{
+    color: red;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+a:visited{
+    color: green;
+}
+
+#html:hover .hint{
+    display: block;
+}
+
+.hint{
+    display: none;
+    background-color: yellow;
+    padding: 10px;
+} */
+
+/* p,
+h1 {
+    color: green;
+}
+
+.demo1 {
+    background-color: aqua;
+}
+
+p.demo1 {
+    text-align: center;
+}
+
+#demo2 {
+    background-color: red;
+}
+
+* {
+    margin-left: 5px;
+} */
+

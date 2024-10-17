@@ -1,0 +1,414 @@
+Rappel : 
+
+* CSS comment integrer des styles dans un fichier html :
+inline
+style
+externe(recommandé)
+
+*syntaxe CSS : 
+
+selecteur {
+  property : value; // rules
+  property : value;
+  property : value;
+
+}
+
+objectif :
+
+selecteurs ?
+
+rules ?
+
+
+selecteurs ? 
+
+simples : element - class - id - * 
+complexes (combinatoires element1 - | , | + | > | ... | - element2)
+pseudo-class : :hover - :active ...
+pseudo-element:  ::first-line ::before ::after
+attribut : [] 
+
+div > p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sélecteurs CSS
+
+Un sélecteur CSS sélectionne les éléments HTML que vous souhaitez styliser.
+
+Les sélecteurs CSS sont utilisés pour « trouver » (ou sélectionner) les éléments HTML que vous souhaitez styliser.
+
+Nous pouvons diviser les sélecteurs CSS en cinq catégories :
+
+*Sélecteurs simples (sélectionnez des éléments en fonction du nom (p), de l'identifiant(#id), de la classe(.class))
+
+*Sélecteurs combinatoires (sélectionnez des éléments en fonction d'une relation spécifique entre eux)
+
+*Sélecteurs de pseudo-classes (sélectionnez des éléments en fonction d'un certain état)
+
+*Sélecteurs de pseudo-éléments (sélectionnez et stylisez une partie d'un élément)
+
+*Sélecteurs d'attributs (sélectionnez des éléments en fonction d'un attribut ou d'une valeur d'attribut)
+
+-------------------------------------------------------
+
+Tous les sélecteurs simples CSS
+
+#firstname	Selects the element with id="firstname"
+
+.intro	Selects all elements with class="intro"
+
+p.intro	Selects only <p> elements with class="intro"
+
+*	Selects all elements
+
+p	Selects all <p> elements
+
+div, p	Selects all <div> elements and all <p> elements
+
+---------------------------------------------------------
+
+Combinateurs CSS
+
+Un sélecteur CSS peut contenir plusieurs sélecteurs simples. Parmi les sélecteurs simples, on peut inclure un combinateur.
+
+Il existe quatre combinateurs différents en CSS :
+
+Combinateur descendant (espace)
+Combinateur enfant (>)
+Combinateur de frères et sœurs suivant (+)
+Combinateur de frères et sœurs subséquents (~)
+
+---------------------------------------------------------
+
+Combinateur de descendants
+
+Le combinateur descendant correspond à tous les éléments qui sont les descendants d'un élément spécifié.
+
+L'exemple suivant sélectionne tous les éléments <p> à l'intérieur des éléments <div> :
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+-----------------------------------------------------------
+
+Combinateur d'enfants (>)
+
+Le combinateur enfant sélectionne tous les éléments qui sont les enfants d'un élément spécifié.
+
+L'exemple suivant sélectionne tous les éléments <p> qui sont enfants d'un élément <div> :
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div > p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Child Selector</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+
+</body>
+</html>
+
+---------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div + p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
+</body>
+</html>
+
+---------------------------------------------------------
+
+Combinateur de frères et sœurs ultérieurs (~)
+Le combinateur de frères et sœurs suivants sélectionne tous les éléments qui sont les frères et sœurs suivants d'un élément spécifié.
+
+L'exemple suivant sélectionne tous les éléments <p> qui sont les frères et sœurs immédiats des éléments <div> : 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div ~ p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>General Sibling Selector</h2>
+
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+</body>
+</html>
+
+-----------------------------------------------------
+
+Pseudo-classes CSS
+
+Une pseudo-classe est utilisée pour définir un état spécial d'un élément.
+
+Par exemple, il peut être utilisé pour :
+
+Styliser un élément lorsqu'un utilisateur déplace la souris dessus
+Donnez un style différent aux liens visités et non visités
+Appliquer un style à un élément lorsqu'il est mis en avant
+Style des éléments de formulaire valides/non valides/obligatoires/facultatifs
+
+-------------------------------------
+
+Syntaxe
+La syntaxe des pseudo-classes :
+
+selector:pseudo-class {
+  property: value;
+}
+
+--------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+</body>
+</html>
+
+-------------------------------------
+
+Pseudo-éléments CSS
+
+Que sont les pseudo-éléments ?
+Un pseudo-élément CSS est utilisé pour styliser des parties spécifiques d'un élément.
+
+Par exemple, il peut être utilisé pour :
+
+Styliser la première lettre ou ligne d'un élément
+Insérer du contenu avant ou après un élément
+Styliser les marqueurs des éléments de la liste
+Styliser la zone d'affichage derrière une boîte de dialogue
+
+-----------------------------------
+
+Syntaxe
+La syntaxe des pseudo-éléments :
+
+selector::pseudo-element {
+  property: value;
+}
+
+-----------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+</body>
+</html>
+
+------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1::before {
+  content: '**';
+}
+
+h1::after {
+  content: '**';
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+
+</body>
+</html>
+
+-------------------------------------
+
+Sélecteurs d'attributs CSS
+
+Styliser les éléments HTML avec des attributs spécifiques
+Il est possible de styliser des éléments HTML qui ont des attributs ou des valeurs d'attributs spécifiques.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a[target] {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+</body>
+</html>
+
+Resume:
+
+
+
+
