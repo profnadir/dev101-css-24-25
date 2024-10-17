@@ -1,0 +1,35 @@
+il existe 3 methodes :
+* l'element html : style dans head
+* l'attribut style dans l'element (inline css)
+* fichier css externe (dev101.css + link)
+
+selecteur{
+    rule1;// prop:valeur // color:red
+    rule2;
+    ...
+}
+
+selecteurs?
+
+simples :
+
+les balise : a ul nav
+classes : .class
+id : #id
+
+complexes:
+
+nav ul li 
+a,p 
+a + p
+a > p
+p.demo
+
+
+rules?
+
+text
+les positions
+colors
+les animations
+boreder
