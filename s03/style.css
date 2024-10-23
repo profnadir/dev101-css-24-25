@@ -1,0 +1,31 @@
+@font-face {
+    font-family: my-font;
+    src: url('Kablammo-Regular-VariableFont_MORF.ttf');
+}
+
+.article p {
+    padding-left: 20px;
+}
+
+h2 + p{
+    background-color: yellow;
+}
+
+h2 ~ p {
+    border: 1px solid black;
+}
+
+li > p{
+    /* background-color: rgba(0 , 0, 0, 0.5); */
+    /* color: rgb(154, 4, 70); */
+    /* color: #555FFF; */
+    color: green; 
+}
+
+p{
+    text-align: justify;
+    /* direction: rtl; */
+    font-size: 16px;
+
+    font-family:my-font;
+}
