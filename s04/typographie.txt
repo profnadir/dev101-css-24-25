@@ -1,0 +1,13 @@
+• Propriété font-style : spécifie un texte en italique. Valeurs possibles : normal, italic, oblique.
+• Propriété font-variant : spécifie si un texte doit être affiché en petites capitales. Valeurs possibles : normal, small-caps.
+• Propriété font-weight : permet de mettre en gras un texte. Valeurs possibles : de 100 à 900, normal, bold, bolder, lighter.
+• Propriété white-space : spécifie l'espace blanc à l'intérieur d'un élément. Valeurs possibles : normal, pre, nowrap, pre-wrap, pre-line
+• Propriété word-spacing : l'espace entre les mots (en pixels).
+• Propriété letter-spacing : l'espace entre deux lettres au sein d'un même mot (en pixels).
+• Propriété text-decoration : spécifie la décoration du texte. Valeurs possibles : none, underline, overline , line-through, blink.
+• Propriété text-transform : permet de contrôler la capitalisation du texte. Valeurs possible : none, uppercase (majuscules), lowercase (miniscule), capitalize (la
+première lettre de chaque mot sera en majuscule).
+• Propriété text-align : permet d’aligner horizontalement le texte. Valeurs possibles: left, center, right, justify
+• Propriété text-indent : taille du retrait de première ligne (en pixels)
+• Propriété line-height : hauteur de ligne (en pixels).
+• Propriété vertical-align : permet d’aligner verticalement le texte. Valeurs possibles : baseline, super, top, text-top, middle, text-bottom, bottom, sub, inherit

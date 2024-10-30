@@ -1,0 +1,85 @@
+/* Utiliser les propriétés CSS */
+
+/* 1. Typographie manipulation du texte */
+
+.demo1{
+    /* color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-style : italic;
+    font-variant :small-caps; */
+    /* font-weight : bolder; */
+    /* white-space: nowrap; */
+    /* word-spacing : 10px; */
+    /* letter-spacing: 20px; */
+    /* text-decoration:line-through; */
+    /* text-transform : lowercase; */
+    /* text-align: justify; */
+    /* text-indent : 50px; */
+    /* line-height : 1.8; */
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+span{
+    vertical-align: super;
+}
+
+a{
+    text-decoration: none;
+}
+
+.demo2{
+    white-space: pre;
+}
+
+/* 2. Bordures et ombres */
+
+.demo1:hover{
+    border-bottom: 5px solid red;
+}
+
+.demo1{
+    
+    border-left: 5px solid green;
+    padding-left: 10px;
+
+   /*  padding: 20px; */
+
+   /* padding: 50px 70px 10px 20px; */
+
+  /*  padding: 40px 80px; */
+
+/*     padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    padding-left: 20px; */
+
+    /* margin: 10px; */
+
+}
+
+.demo3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 50%;
+
+    box-shadow: 10px -10px 50px gray;
+}
+
+/* 3. Marges et padding */
+
+/* 4. Images */
+
+/* 5. Couleurs de fond */
+
+/* 6. Background */
+
+/* 7. Types de positionnement (relatif, absolu, float…) */
+
+/* 8. Utilisation des blocs Flex (FlexBox) */
+
+/* Grid system + framework css */
