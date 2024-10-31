@@ -1,0 +1,111 @@
+La position propriété spécifie le type de méthode de positionnement utilisé pour un élément (statique, relatif, fixe, absolu ou collant).
+
+
+Il existe cinq valeurs de position différentes :
+
+static
+relative
+fixed
+absolute
+sticky
+
+Les éléments sont ensuite positionnés à l'aide des propriétés top, bottom, left et right. Cependant, ces propriétés ne fonctionneront pas si la position propriété n'est pas définie en premier. Elles fonctionnent également différemment en fonction de la valeur de position.
+
+position : statique ;
+Les éléments HTML sont positionnés de manière statique par défaut.
+
+Les éléments positionnés statiquement ne sont pas affectés par les propriétés top, bottom, left et right.
+
+Un élément position: static;n'est pas positionné de manière particulière ; il est toujours positionné selon le flux normal de la page :
+
+Cet élément <div> a la position : static ;
+Voici le CSS qui est utilisé :
+
+Exemple
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+position : relative ;
+
+Un élément avec position: relative;est positionné par rapport à sa position normale.
+
+La définition des propriétés haut, droite, bas et gauche d'un élément positionné de manière relative entraînera son ajustement par rapport à sa position normale. Les autres contenus ne seront pas ajustés pour s'adapter à l'espace laissé par l'élément.
+
+Cet élément <div> a une position : relative ;
+Voici le CSS qui est utilisé :
+
+Exemple
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+position : fixe ;
+
+Un élément avec position: fixed;est positionné par rapport à la fenêtre d'affichage, ce qui signifie qu'il reste toujours au même endroit même si la page défile. Les propriétés top, right, bottom et left sont utilisées pour positionner l'élément.
+
+Un élément fixe ne laisse pas de vide dans la page là où il aurait normalement été situé.
+
+Notez l'élément fixe dans le coin inférieur droit de la page. Voici le CSS utilisé :
+
+Exemple
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+Cet élément <div> aposition: fixed;
+
+position : absolue ;
+Un élément position: absolute;est positionné par rapport à l'ancêtre positionné le plus proche (au lieu d'être positionné par rapport à la fenêtre d'affichage, comme fixe).
+
+Cependant, si un élément positionné de manière absolue n'a pas d'ancêtre positionné, il utilise le corps du document et se déplace avec le défilement de la page.
+
+Remarque : les éléments positionnés de manière absolue sont supprimés du flux normal et peuvent chevaucher des éléments.
+
+Voici un exemple simple :
+
+Cet élément <div> a une position : relative ;Cet élément <div> a la position : absolue ;
+Voici le CSS qui est utilisé :
+
+Exemple
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+position : sticky ;
+
+Un élément position: sticky;est positionné en fonction de la position de défilement de l'utilisateur.
+
+Un élément collant bascule entre relativeet fixed, en fonction de la position de défilement. Il est positionné de manière relative jusqu'à ce qu'une position de décalage donnée soit atteinte dans la fenêtre d'affichage - puis il « colle » en place (comme position:fixed).
+
+
+Remarque : vous devez spécifier au moins l'un des éléments suivantstop : , right, bottomou leftpour que le positionnement collant fonctionne.
+
+Dans cet exemple, l'élément collant reste en haut de la page ( top: 0), lorsque vous atteignez sa position de défilement.
+
+Exemple
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
