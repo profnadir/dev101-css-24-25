@@ -1,31 +1,55 @@
+body{
+    height: 1000px;
+}
+
+
 .demo1{
-    width: 300px;
+    width: 400px;
     height: 100px;
     background-color: black;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    /* position: sticky;
+    top: 0px; */
 }
 .demo2{
-    width: 300px;
+    width: 400px;
     height: 100px;
     background-color: white;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    /* position: sticky;
+    top: 100px; */
 }
 .demo3{
-    width: 300px;
+    width: 400px;
     height: 100px;
     background-color: green;
-    border: 1px solid black;
-   
+    border-right: 1px solid black;
+  /*   position: sticky;
+    top: 200px; */
 }
+
+
 
 .demo4{
     width: 300px;
-    height: 300px;
-    background-color: red;
-    border: 1px solid black;
+    /* height: 300px; */
+
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-left: 150px solid red;
+
     position: relative;
     bottom: 300px;
    
+}
+
+.demo5{
+    width: 600px;
+    height: 300px;
+    background-color: red;
+    border-right: 1px solid black;
+    position: relative;
 }
 
 /* .demo1{ */

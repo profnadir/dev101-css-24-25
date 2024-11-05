@@ -1,0 +1,14 @@
+Rappel : 
+
+les positions :
+
+* relative : par rapport a sa position initial
+* absolute : par rapport au parent (relative)
+* fixed : fixé dans le VP
+* static : normal
+* sticky : relative + fixed
+
+
+objectif :
+
+manipulation de flex
