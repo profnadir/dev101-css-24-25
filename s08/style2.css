@@ -1,0 +1,88 @@
+.demo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.demo1 > img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: transform 2s;
+    animation-name: my-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    /* animation: example 5s linear 2s infinite alternate; */
+
+}
+
+@keyframes my-anim {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+
+}
+
+
+
+.demo2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative; top: 0; left: 0;
+
+ /*    animation-name: dev101;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out; */
+
+}
+
+@keyframes dev101 {
+/*     from {background-color: red;}
+    to {background-color: yellow;} */
+
+    0%   {background-color: red; 
+        position: relative; top: 0; left: 0;}
+    25%  {background-color: yellow;
+        position: relative; top: 100px; left: 0;}
+    50%  {background-color: blue;
+        position: relative; top: 100px; left: 100px;}
+    100% {background-color: green;
+        position: relative; top: 0px; left: 100px;}
+}
+
+.demo1 > img:hover{
+    /* transform: rotate(360deg); */
+    transform: rotateY(180deg);
+}
+
+/* @keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation */
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* div {
+  animation: example 5s linear 2s infinite alternate;
+} */

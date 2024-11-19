@@ -1,0 +1,46 @@
+.demo1{
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transition: all 2s; */
+    /* transition
+    transition-delay
+    transition-duration
+    transition-property */
+    transition-property: all;
+    transition-duration: 4s;
+    /* transition-delay: 2s; */
+    /* transition-timing-function: cubic-bezier(1, 0.82, 0.165, 1); */
+
+/*     *transition-timing-function
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+ */
+
+}
+
+.demo1:hover{
+    /* transform: translate(50px,100px); */
+    transform: rotateZ(-180deg);
+
+    /* transform: scale(1.5,1.5); */
+    /* transform: skew(20deg,50deg); */
+    /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+}
+
+/* 
+Transformations 2D:
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix() */
